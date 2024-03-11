@@ -5,7 +5,7 @@ import { footerLink } from "./data";
 export default function Footer() {
   return (
     <footer className="min-h-[476px] py-[50px]">
-      <div className="inner_section flex flex-col md:flex-row min-h-[375px] gap-y-[50px] gap-3 justify-between rounded-[20px] border bg-sky-100 pb-[127px] pl-[30px] md:pl-[50px] pr-[30px] md:pr-[119px] pt-[50px]">
+      <div className="inner_section flex flex-col md:flex-row min-h-[375px] gap-y-[50px] gap-3 justify-between rounded-[20px] border bg-sky-100 pb-[80px] sm:pb-[127px] pl-[30px] md:pl-[50px] pr-[30px] md:pr-[119px] pt-[50px]">
         <div className="flex w-full sm:w-[383px] flex-col items-start justify-start gap-8 self-stretch">
           <div
             className={`flex items-center gap-[5px] text-2xl font-semibold text-blue-600`}

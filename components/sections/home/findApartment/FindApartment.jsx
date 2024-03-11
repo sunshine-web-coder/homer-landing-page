@@ -8,8 +8,8 @@ export default function FindApartment() {
   return (
     <section className="mt-[100px] md:mt-[200px] md:min-h-[1104px] bg-blue-600 p-4 md:px-16 pb-[76px] pt-[100px]">
       <div className="inner_section">
-        <div className="flex sm:min-h-[427px] flex-col items-start justify-start gap-10 rounded-t-[20px] bg-white px-[23px] sm:px-[45px] md:px-[90px] pb-10 pt-[23px] sm:pt-[45px] md:pt-[90px]">
-          <p className="text-[28px] sm:text-[38px] md:text-[48px] font-normal leading-10 sm:leading-[60px] text-neutral-900">
+        <div className="flex sm:min-h-[427px] flex-col items-center sm:items-start justify-center sm:justify-start gap-10 rounded-t-[20px] bg-white px-[23px] sm:px-[45px] md:px-[90px] pb-10 pt-[23px] sm:pt-[45px] md:pt-[90px]">
+          <p className="text-[23px] text-center sm:text-left sm:text-[38px] md:text-[48px] font-normal leading-10 sm:leading-[60px] text-neutral-900">
             The best place to discover amazing properties at great prices. Are
             you looking to buy or sell a property? Get in touch today
           </p>
@@ -20,7 +20,7 @@ export default function FindApartment() {
             Find apartments
           </Link>
         </div>
-        <div className="flex findApartment h-[250px] sm:h-full md:min-h-[500px] w-full items-center justify-center rounded-b-[20px] px-[23px] sm:px-[45px] pb-[42px] md:pb-[84px] pt-[135px] md:pt-[276px]">
+        <div className="flex findApartment h-[270px] sm:h-[400px] md:h-[500px] w-full items-center justify-center rounded-b-[20px] px-[23px] sm:px-[45px] pb-[42px] md:pb-[84px] pt-[100px] sm:pt-[135px] md:pt-[276px]">
           <div className="flex sm:min-h-[140px] w-full sm:w-[418px] flex-col items-start justify-start gap-2.5 rounded-[20px] bg-neutral-100 p-[20px] sm:p-[30px]">
             <div className="flex items-center justify-start gap-5">
               <Image

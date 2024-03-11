@@ -87,7 +87,7 @@ export default function TheSliderSlick() {
     <Slider {...settings}>
       {testimonialData.map((item) => (
         <div key={item.id} className="pr-0 sm:pr-5">
-          <div className="flex min-h-[406px] w-full flex-col items-start justify-between gap-2.5 rounded-[20px] bg-white p-10">
+          <div className="flex min-h-[406px] w-full flex-col items-start justify-between gap-2.5 rounded-[20px] bg-white p-5 sm:p-10">
             <ReactStars
               count={5}
               size={24}
