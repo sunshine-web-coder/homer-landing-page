@@ -1,5 +1,5 @@
-import featureImg1 from "../../../assets/featured_img_1.png"
-import featureImg2 from "../../../assets/featured_img_2.png"
+import featureImg1 from "../../../../assets/featured_img_1.png"
+import featureImg2 from "../../../../assets/featured_img_2.png"
 
 export const featuredPropertiesData = [
     {

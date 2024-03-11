@@ -15,8 +15,8 @@ export default function Header() {
   }
 
   return (
-    <header className="px-[16px] fixed top-0 left-0 right-0 bg-[#256AE0] z-50 w-full lg:px-[64px] py-5">
-      <div className="inner_section flex-col md:flex-row flex items-start md:relative md:items-center justify-between">
+    <header className="px-[16px] h-[84px] md:h-[102px] flex flex-col items-start justify-center fixed top-0 left-0 right-0 bg-[#256AE0] z-50 w-full md:px-[64px] py-5">
+      <div className="inner_section w-full flex-col md:flex-row flex items-start md:relative md:items-center justify-between">
         <div className="flex justify-between items-center w-full">
           <div className={`flex items-center gap-[5px] text-neutral-100 text-2xl font-semibold`}>
             <svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,22 +25,22 @@ export default function Header() {
             <span>Homer</span>  
           </div>
           <div className="block md:hidden">
-            <svg onClick={handleClose} className={`${isOpen ? "block" : "hidden"}`} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.40994 8L15.7099 1.71C15.8982 1.5217 16.004 1.2663 16.004 1C16.004 0.733701 15.8982 0.478306 15.7099 0.290002C15.5216 0.101699 15.2662 -0.00408936 14.9999 -0.00408936C14.7336 -0.00408936 14.4782 0.101699 14.2899 0.290002L7.99994 6.59L1.70994 0.290002C1.52164 0.101699 1.26624 -0.00408912 0.999939 -0.00408912C0.733637 -0.00408912 0.478243 0.101699 0.289939 0.290002C0.101635 0.478306 -0.00415253 0.733701 -0.00415254 1C-0.00415254 1.2663 0.101635 1.5217 0.289939 1.71L6.58994 8L0.289939 14.29C0.196211 14.383 0.121816 14.4936 0.0710478 14.6154C0.0202791 14.7373 -0.00585938 14.868 -0.00585938 15C-0.00585938 15.132 0.0202791 15.2627 0.0710478 15.3846C0.121816 15.5064 0.196211 15.617 0.289939 15.71C0.382902 15.8037 0.493503 15.8781 0.615362 15.9289C0.737221 15.9797 0.867927 16.0058 0.999939 16.0058C1.13195 16.0058 1.26266 15.9797 1.38452 15.9289C1.50638 15.8781 1.61698 15.8037 1.70994 15.71L7.99994 9.41L14.2899 15.71C14.3829 15.8037 14.4935 15.8781 14.6154 15.9289C14.7372 15.9797 14.8679 16.0058 14.9999 16.0058C15.132 16.0058 15.2627 15.9797 15.3845 15.9289C15.5064 15.8781 15.617 15.8037 15.7099 15.71C15.8037 15.617 15.8781 15.5064 15.9288 15.3846C15.9796 15.2627 16.0057 15.132 16.0057 15C16.0057 14.868 15.9796 14.7373 15.9288 14.6154C15.8781 14.4936 15.8037 14.383 15.7099 14.29L9.40994 8Z" fill="black"/>
+            <svg onClick={handleClose} className={`${isOpen ? "block" : "hidden"}`} width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.4158 8.00409L15.7158 1.71409C15.9041 1.52579 16.0099 1.27039 16.0099 1.00409C16.0099 0.73779 15.9041 0.482395 15.7158 0.294092C15.5275 0.105788 15.2721 0 15.0058 0C14.7395 0 14.4841 0.105788 14.2958 0.294092L8.0058 6.59409L1.7158 0.294092C1.52749 0.105788 1.2721 2.36434e-07 1.0058 2.38419e-07C0.739497 2.40403e-07 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.00170684 0.73779 0.00170684 1.00409C0.00170684 1.27039 0.107495 1.52579 0.295798 1.71409L6.5958 8.00409L0.295798 14.2941C0.20207 14.3871 0.127676 14.4977 0.0769072 14.6195C0.0261385 14.7414 0 14.8721 0 15.0041C0 15.1361 0.0261385 15.2668 0.0769072 15.3887C0.127676 15.5105 0.20207 15.6211 0.295798 15.7141C0.388761 15.8078 0.499362 15.8822 0.621222 15.933C0.743081 15.9838 0.873786 16.0099 1.0058 16.0099C1.13781 16.0099 1.26852 15.9838 1.39038 15.933C1.51223 15.8822 1.62284 15.8078 1.7158 15.7141L8.0058 9.41409L14.2958 15.7141C14.3888 15.8078 14.4994 15.8822 14.6212 15.933C14.7431 15.9838 14.8738 16.0099 15.0058 16.0099C15.1378 16.0099 15.2685 15.9838 15.3904 15.933C15.5122 15.8822 15.6228 15.8078 15.7158 15.7141C15.8095 15.6211 15.8839 15.5105 15.9347 15.3887C15.9855 15.2668 16.0116 15.1361 16.0116 15.0041C16.0116 14.8721 15.9855 14.7414 15.9347 14.6195C15.8839 14.4977 15.8095 14.3871 15.7158 14.2941L9.4158 8.00409Z" fill="#F7F7F7"/>
             </svg>
-              <svg onClick={handleOpen} className={`${isOpen ? "hidden" : "block"}`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 8H21C21.2652 8 21.5196 7.89464 21.7071 7.70711C21.8946 7.51957 22 7.26522 22 7C22 6.73478 21.8946 6.48043 21.7071 6.29289C21.5196 6.10536 21.2652 6 21 6H3C2.73478 6 2.48043 6.10536 2.29289 6.29289C2.10536 6.48043 2 6.73478 2 7C2 7.26522 2.10536 7.51957 2.29289 7.70711C2.48043 7.89464 2.73478 8 3 8ZM21 16H3C2.73478 16 2.48043 16.1054 2.29289 16.2929C2.10536 16.4804 2 16.7348 2 17C2 17.2652 2.10536 17.5196 2.29289 17.7071C2.48043 17.8946 2.73478 18 3 18H21C21.2652 18 21.5196 17.8946 21.7071 17.7071C21.8946 17.5196 22 17.2652 22 17C22 16.7348 21.8946 16.4804 21.7071 16.2929C21.5196 16.1054 21.2652 16 21 16ZM21 11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11Z" fill="black"/>
-              </svg>
+            <svg onClick={handleOpen} className={`${isOpen ? "hidden" : "block"}`} width="24" height="24" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 2H19C19.2652 2 19.5196 1.89464 19.7071 1.70711C19.8946 1.51957 20 1.26522 20 1C20 0.734784 19.8946 0.48043 19.7071 0.292893C19.5196 0.105357 19.2652 0 19 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2ZM19 10H1C0.734784 10 0.48043 10.1054 0.292893 10.2929C0.105357 10.4804 0 10.7348 0 11C0 11.2652 0.105357 11.5196 0.292893 11.7071C0.48043 11.8946 0.734784 12 1 12H19C19.2652 12 19.5196 11.8946 19.7071 11.7071C19.8946 11.5196 20 11.2652 20 11C20 10.7348 19.8946 10.4804 19.7071 10.2929C19.5196 10.1054 19.2652 10 19 10ZM19 5H1C0.734784 5 0.48043 5.10536 0.292893 5.29289C0.105357 5.48043 0 5.73478 0 6C0 6.26522 0.105357 6.51957 0.292893 6.70711C0.48043 6.89464 0.734784 7 1 7H19C19.2652 7 19.5196 6.89464 19.7071 6.70711C19.8946 6.51957 20 6.26522 20 6C20 5.73478 19.8946 5.48043 19.7071 5.29289C19.5196 5.10536 19.2652 5 19 5Z" fill="#F7F7F7"/>
+            </svg>
           </div>
         </div>
-        <nav className={`flex absolute top-[50px] md:top-0 bg-white md:p-0 p-[16px] left-[-100%] md:left-0 w-full sm:max-w-[384px] right-0 md:max-w-max md:relative mt-8 md:mt-0 h-screen md:h-0 flex-col md:flex-row gap-7 ${isOpen ? "left-[0%]" : ""}`}>
-          <ul className={`flex flex-col md:flex-row gap-7 text-neutral-100 text-base font-normal items-start md:items-center`}>
-            <li><Link href="">Home</Link></li>
-            <li><Link href="">Properties</Link></li>
-            <li><Link href="">About</Link></li>
+        <nav className={`flex absolute top-[50px] md:top-0 bg-white left-[-100%] md:left-0 w-full sm:max-w-[384px] right-0 md:max-w-max md:relative mt-8 md:mt-0 h-screen md:h-0 flex-col md:flex-row gap-7 ${isOpen ? "left-[0%]" : ""}`}>
+          <ul className={`flex flex-col md:flex-row gap-0 md:gap-7 text-[#111111] md:text-neutral-100 text-base font-normal items-start md:items-center`}>
+            <li className="w-full"><Link onClick={handleClose} className="block p-4 md:p-0 w-full" href="">Home</Link></li>
+            <li className="w-full"><Link onClick={handleClose} className="block p-4 md:p-0 w-full" href="">Properties</Link></li>
+            <li className="w-full"><Link onClick={handleClose} className="block p-4 md:p-0 w-full" href="">About</Link></li>
           </ul>
-          <div className={`flex items-center text-base font-medium gap-2`}>
-            <Link className={`w-[163px] h-[62px] text-neutral-100 px-[20px] py-[15px] bg-[#102D5E] rounded-[10px] justify-center items-center gap-2.5 flex`} href="">
+          <div className={`flex p-4 md:p-0 items-center text-base font-medium gap-2`}>
+            <Link onClick={handleClose} className={`w-[163px] h-[62px] text-neutral-100 px-[20px] py-[15px] bg-[#102D5E] rounded-[10px] justify-center items-center gap-2.5 flex`} href="">
               Contact us
             </Link>
           </div>

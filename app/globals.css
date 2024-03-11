@@ -6,12 +6,19 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-section{
+
+section, footer{
   @apply px-[16px] md:px-[64px]
+
 }
 .inner_section{
-  @apply max-w-[1312.35px] mx-auto
+  @apply max-w-[1000px] md:max-w-[1312.35px] mx-auto
 }
+
 .discover_property{
   @apply bg-[url('../assets/dc_img.png')] bg-no-repeat bg-[length:100%_100%]
+}
+
+.findApartment{
+    @apply bg-[url('../assets/fa.png')] bg-no-repeat bg-[length:100%_100%]
 }
